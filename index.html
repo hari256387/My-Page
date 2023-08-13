@@ -1,64 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Multi-Purpose Calculator and Converter</title>
+    <title>Age Calculator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Multi-Purpose Calculator and Converter</h1>
-
-        <!-- Age Calculator -->
-        <div class="calculator">
-            <h2>Age Calculator</h2>
-            <label for="birthdate">Enter Your Birthdate:</label>
-            <input type="date" id="birthdate">
-            <button onclick="calculateAge()">Calculate Age</button>
-            <p id="ageResult"></p>
-        </div>
-
-        <!-- Loan Calculator -->
-        <div class="calculator">
-            <h2>Loan Calculator</h2>
-            <label for="loanAmount">Loan Amount:</label>
-            <input type="number" id="loanAmount">
-            <label for="loanTerm">Loan Term (in months):</label>
-            <input type="number" id="loanTerm">
-            <label for="interestRate">Interest Rate (% per annum):</label>
-            <input type="number" id="interestRate">
-            <button onclick="calculateLoan()">Calculate EMI</button>
-            <p id="emiResult"></p>
-        </div>
-
-        <!-- Units Converter -->
-        <div class="converter">
-            <h2>Units Converter</h2>
-            <label for="unitValue">Enter Value:</label>
-            <input type="number" id="unitValue">
-            <label for="unitFrom">From:</label>
-            <select id="unitFrom">
-                <option value="meters">Meters</option>
-                <option value="feet">Feet</option>
-                <!-- Add more units as needed -->
-            </select>
-            <label for="unitTo">To:</label>
-            <select id="unitTo">
-                <option value="meters">Meters</option>
-                <option value="feet">Feet</option>
-                <!-- Add more units as needed -->
-            </select>
-            <button onclick="convertUnits()">Convert</button>
-            <p id="conversionResult"></p>
-        </div>
-
-        <!-- Document Converter -->
-        <div class="converter">
-            <h2>Document Converter</h2>
-            <label for="documentFile">Upload Document:</label>
-            <input type="file" id="documentFile">
-            <button onclick="convertDocument()">Convert</button>
-            <p id="documentResult"></p>
-        </div>
+    <div class="calculator">
+        <h2>Age Calculator</h2>
+        <label for="birthdate">Enter Your Birthdate:</label>
+        <input type="date" id="birthdate">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <p id="result"></p>
     </div>
 
     <script src="script.js"></script>
