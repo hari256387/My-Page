@@ -19,17 +19,4 @@ function calculateAge() {
     document.getElementById('ageResult').innerText = `You are ${years} years, ${months} months, and ${days} days old.`;
 }
 
-// Loan Calculator
-function calculateLoan() {
-    // Add loan calculation logic here
-}
 
-// Units Converter
-function convertUnits() {
-    // Add units conversion logic here
-}
-
-// Document Converter
-function convertDocument() {
-    // Add document conversion logic here
-}
